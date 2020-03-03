@@ -6,7 +6,7 @@ This application lists the current number of cases reported across the globe. Th
 <b>Additional Information about the Visual Dashboard:</b><br>
 https://systems.jhu.edu/research/public-health/ncov/
 <br>
-<b>Online Demo:</b>
+<b>Online Demo:</b><br>
 https://coronavirus-track.herokuapp.com/
 <br><br>
 
