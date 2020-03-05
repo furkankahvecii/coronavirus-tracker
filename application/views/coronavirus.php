@@ -65,7 +65,7 @@
         <div class="row">
             <div class="col-9"></div>
             <div class="col-3">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" id="search">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" id="search">
             </div>
         </div>
 
