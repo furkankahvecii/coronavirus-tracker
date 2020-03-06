@@ -13,22 +13,25 @@ class CoronaVirusData extends CI_Controller
         }
         else{
             $csv = array_map('str_getcsv', explode("\n", $contents));
+            $info = $csv[0];
             unset($csv[0]);
             $sonuc['results'] = array();
             $sonuc['TOTAL_CASE_REPORTED'] = 0;
             $sonuc['TOTAL_CASE_REPORTED_LASTDAY'] = 0;
+
     
             foreach($csv as $row => $innerArray){
-                $sonuc['results'][] = array(
-                    "STATE" => $innerArray[0],
-                    "COUNTRY" => $innerArray[1],
-                    "TOTAL_CASE" => $innerArray[count($innerArray)-1],
-                    "TOTAL_CASE_LASTDAY" => $innerArray[count($innerArray)-2]
-                );
-                $sonuc['TOTAL_CASE_REPORTED'] += $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1]:0;
-                $sonuc['TOTAL_CASE_REPORTED_LASTDAY'] += $innerArray[count($innerArray)-2]!= NULL ? $innerArray[count($innerArray)-2]:0;
+                if(count($innerArray) == count($info)){
+                    $sonuc['results'][] = array(
+                        "STATE" => $innerArray[0],
+                        "COUNTRY" => $innerArray[1],
+                        "TOTAL_CASE" => $innerArray[count($innerArray)-1],
+                        "TOTAL_CASE_LASTDAY" => $innerArray[count($innerArray)-2]
+                    );
+                    $sonuc['TOTAL_CASE_REPORTED'] += $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1]:0;
+                    $sonuc['TOTAL_CASE_REPORTED_LASTDAY'] += $innerArray[count($innerArray)-2]!= NULL ? $innerArray[count($innerArray)-2]:0;
+                }  
             }
-            //echo "<pre>"; print_r($sonuc); echo "</pre>";
             $this->load->view('coronavirus',$sonuc);
         }
     }
