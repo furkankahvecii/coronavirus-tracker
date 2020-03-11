@@ -39,18 +39,53 @@
 <?php } else{?>
 
 <body>
-    <div class="container">
-
-        <nav class="navbar navbar-light bg-light">
-            <h1>Coronavirus Tracker Application</h1>
-            <a href="https://github.com/furkankahvecii/coronavirus-tracker" class="btn btn-primary btn-lg active btn-sm"
-                role="button" aria-pressed="true" target="_blank">Source Code</a>
-            <p>This application lists the current number of cases reported across the globe</p>
-
-        </nav>
+    <div class="container" >
+        <div class="row" >
+            <div class="col-sm-10" style="margin-top:10px;">
+                <h2>Coronavirus Tracker Application</h2>
+            </div>
+            <div class="col-sm-2" style="margin-top:20px;">
+                <a href="https://github.com/furkankahvecii/coronavirus-tracker" class="btn btn-primary btn-lg active btn-sm mt-10" role="button" aria-pressed="true" target="_blank">Source Code</a>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>This application lists the current number of cases reported across the globe</p>
+            </div> 
+        </div>
+            
 
 
         <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1 class="display-4" th:text=""><?php echo $TOTAL_CASE_REPORTED;?></h1>
+                        <p class="lead">Total cases reported as of today</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="display-4" th:text=""><?php echo $TOTAL_DEATHS_REPORTED;?></h1>
+                        <p class="lead">Total deaths reported as of today</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="display-4" th:text=""><?php echo $TOTAL_RECOVERED_REPORTED;?></h1>
+                        <p class="lead">Total recovered reported as of today</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr class="my-4" style="clear:left;">
+                            <p>
+                                <span>New cases reported since previous day:</span>
+                                <span th:text=""><?php echo $TOTAL_CASE_REPORTED_LASTDAY;?></span>
+                            </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+
+        <!-- <div class="jumbotron">
             <div style="float:left;">
                 <h1 class="display-4" th:text=""><?php echo $TOTAL_CASE_REPORTED;?></h1>
                 <p class="lead">Total cases reported as of today</p>
@@ -68,7 +103,7 @@
                 <span>New cases reported since previous day:</span>
                 <span th:text=""><?php echo $TOTAL_CASE_REPORTED_LASTDAY;?></span>
             </p>
-        </div>
+        </div> -->
 
 
 
