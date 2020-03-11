@@ -51,9 +51,19 @@
 
 
         <div class="jumbotron">
-            <h1 class="display-4" th:text=""><?php echo $TOTAL_CASE_REPORTED;?></h1>
-            <p class="lead">Total cases reported as of today</p>
-            <hr class="my-4">
+            <div style="float:left;">
+                <h1 class="display-4" th:text=""><?php echo $TOTAL_CASE_REPORTED;?></h1>
+                <p class="lead">Total cases reported as of today</p>
+            </div>
+            <div style="float:left;margin-left:50px;">
+                <h1 class="display-4" th:text=""><?php echo $TOTAL_DEATHS_REPORTED;?></h1>
+                <p class="lead">Total deaths reported as of today</p>
+            </div>
+            <div style="float:left;margin-left:50px;">
+                <h1 class="display-4" th:text=""><?php echo $TOTAL_RECOVERED_REPORTED;?></h1>
+                <p class="lead">Total recovered reported as of today</p>
+            </div>
+            <hr class="my-4" style="clear:left;">
             <p>
                 <span>New cases reported since previous day:</span>
                 <span th:text=""><?php echo $TOTAL_CASE_REPORTED_LASTDAY;?></span>
@@ -76,7 +86,9 @@
                 <tr>
                     <th>State</th>
                     <th>Country</th>
-                    <th>Total cases reported</th>
+                    <th>Total cases</th>
+                    <th>Total death</th>
+                    <th>Total recovered</th>
                     <th>Changes since last day</th>
                 </tr>
             </thead>
@@ -86,6 +98,8 @@
                     <td><?php echo $line['STATE'];?></td>
                     <td><?php echo $line['COUNTRY'];?></td>
                     <td><?php echo $line['TOTAL_CASE'];?></td>
+                    <td><?php echo $line['TOTAL_DEATH'];?></td>
+                    <td><?php echo $line['TOTAL_RECOVERED'];?></td>
                     <td><?php echo $line['TOTAL_CASE'] - $line['TOTAL_CASE_LASTDAY'];?></td>
                 </tr>
                 <?php } ?>
