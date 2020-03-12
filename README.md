@@ -4,5 +4,5 @@ This application lists the current number of cases reported across the globe. Th
 
 <br>
 <b>Online Demo:</b><br>
-https://coronavirus-track.herokuapp.com/
+<a href="https://coronavirus-track.herokuapp.com/" target="_blank">https://coronavirus-track.herokuapp.com/</a>
 <br><br>
