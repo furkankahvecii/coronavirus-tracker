@@ -30,13 +30,13 @@ class CoronaVirusData extends CI_Controller
             $sonuc['TOTAL_RECOVERED_REPORTED'] = 0;
             $sonuc['TOTAL_CASE_REPORTED_LASTDAY'] = 0;
 
-
+    
             foreach($csvConfirmed as $row => $innerArray){
                 if(count($innerArray) == count($info)){
                     $sonuc['results'][] = array(
                         "STATE" => $innerArray[0],
                         "COUNTRY" => $innerArray[1],
-                        "TOTAL_CASE" => $innerArray[count($innerArray)-1] != NULL && $innerArray[count($innerArray)-1] != 0  ? $innerArray[count($innerArray)-1] :$innerArray[count($innerArray)-2],
+                        "TOTAL_CASE" => $innerArray[count($innerArray)-1],
                         "TOTAL_CASE_LASTDAY" => $innerArray[count($innerArray)-2]
                     );
                     $sonuc['TOTAL_CASE_REPORTED'] += $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1]:0;
@@ -47,7 +47,7 @@ class CoronaVirusData extends CI_Controller
           $i = 0;
             foreach($csvDeaths as $row => $innerArray){
                 if(count($innerArray) == count($info)){
-                    $sonuc['results'][$i++]["TOTAL_DEATH"] = $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1] :$innerArray[count($innerArray)-2];
+                    $sonuc['results'][$i++]["TOTAL_DEATH"] = $innerArray[count($innerArray)-1];
                     $sonuc["TOTAL_DEATHS_REPORTED"] += $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1]:0;
                 }  
             }
@@ -55,17 +55,16 @@ class CoronaVirusData extends CI_Controller
             $i = 0;
             foreach($csvRecovered as $row => $innerArray){
                 if(count($innerArray) == count($info)){
-                    $sonuc['results'][$i++]["TOTAL_RECOVERED"] = $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1] :$innerArray[count($innerArray)-2];
+                    $sonuc['results'][$i++]["TOTAL_RECOVERED"] = $innerArray[count($innerArray)-1];
                     $sonuc["TOTAL_RECOVERED_REPORTED"] += $innerArray[count($innerArray)-1] != NULL ? $innerArray[count($innerArray)-1]:0;
                 }  
             }
 
-          //  echo "<pre>"; print_r($sonuc); echo "</pre>";
-
+           
+            // echo "<pre>"; print_r($sonuc); echo "</pre>";
           $this->load->view('coronavirus',$sonuc);
         }
     }
 }
 
 
-    
