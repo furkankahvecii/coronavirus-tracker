@@ -23,7 +23,25 @@ class CoronaVirusData extends CI_Controller
         $instance = new CoronaVirus($urlCsvColumns,$this->csvColumns);
         $instance->fetchData();
         $result = $instance->processCsv();
-
+        $result['maps'] = $this->mapData($result['results']);
         $this->load->view('coronavirus',$result);
+    }
+
+    public function mapData($result){
+ 
+        $res  = array();
+        foreach($result as $vals){
+            if(array_key_exists($vals['COUNTRY'],$res)){
+                $res[$vals['COUNTRY']]['TOTAL_CASE']           += $vals['TOTAL_CASE'];
+                $res[$vals['COUNTRY']]['TOTAL_CASE_LASTDAY']   += $vals['TOTAL_CASE_LASTDAY'];
+                $res[$vals['COUNTRY']]['TOTAL_DEATH']          += $vals['TOTAL_DEATH'];
+                $res[$vals['COUNTRY']]['TOTAL_RECOVERED']      += $vals['TOTAL_RECOVERED'];
+            }
+            else{
+                unset($vals['STATE']);
+                $res[$vals['COUNTRY']]  = $vals;
+            }
+        }
+        return $res;
     }
 }
