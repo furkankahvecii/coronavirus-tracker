@@ -114,8 +114,8 @@
                             <span>New cases reported since previous day:</span>
                             <span th:text=""><?php echo $TOTAL_CASE_REPORTED_LASTDAY;?></span>
                         </p>
-                        <input id="toggle-event" type="checkbox" data-toggle="toggle" data-on="GeoChart"
-                            data-off="Table" data-onstyle="success" data-offstyle="info">
+                        <input id="toggle-event" type="checkbox" data-toggle="toggle" data-on="Table"
+                            data-off="GeoChart" data-onstyle="success" data-offstyle="info">
                     </div>
                 </div>
             </div>
