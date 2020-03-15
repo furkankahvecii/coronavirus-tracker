@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class CoronaVirusData extends CI_Controller 
-{
-    private $url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-";
+class CoronaVirusData extends CI_Controller {
+
+	private $url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-";
     private $csvColumns =  array("Confirmed","Deaths","Recovered");
 
     public function __construct()
@@ -24,6 +24,7 @@ class CoronaVirusData extends CI_Controller
         $instance->fetchData();
         $result = $instance->processCsv();
         $result['maps'] = $this->mapData($result['results']);
+        usort($result['results'], array($this,'cmp')); // Descending sorting with usort by cmp function
         $this->load->view('coronavirus',$result);
     }
 
@@ -43,5 +44,13 @@ class CoronaVirusData extends CI_Controller
             }
         }
         return $res;
+    }
+
+    function cmp($a, $b)
+    {
+        if ($a['TOTAL_CASE'] == $b['TOTAL_CASE']) {
+            return 0;
+        }
+        return ($a['TOTAL_CASE'] < $b['TOTAL_CASE']) ? 1 : -1; // return ($a['TOTAL_CASE'] < $b['TOTAL_CASE']) ? -1 : 1; -> ASC
     }
 }
