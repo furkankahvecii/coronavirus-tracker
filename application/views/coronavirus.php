@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-
 <head>
     <title>Coronavirus Tracker Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Corona Virus Tracker by Furkan KAHVECİ">
+    <meta name="keywords" content="Corona, COVID-19, Coronavirus, tracker">
+    <meta name="author" content="Furkan KAHVECİ">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -22,10 +27,13 @@
 
         function drawRegionsMap() {
             var data = google.visualization.arrayToDataTable([
-                ['Country', 'TotalCase', 'TotalDeath'], 
-                <?php foreach($maps as $each) {
-                    echo '["'.$each['COUNTRY'].'",'.$each['TOTAL_CASE'].','.$each['TOTAL_DEATH'].'],';
-                } ?>
+                ['Country', 'TotalCase', 'TotalDeath'], <
+                ? php foreach($maps as $each) {
+                    echo '["'.$each['COUNTRY'].
+                    '",'.$each['TOTAL_CASE'].
+                    ','.$each['TOTAL_DEATH'].
+                    '],';
+                } ? >
             ]);
 
             var options = {
@@ -72,24 +80,19 @@
 <?php } else{?>
 
 <body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-9" style="margin-top:10px;">
+    <div class="container" style="margin-bottom:5vh;">
+        <div class="row my-2">
+            <div class="col-sm-9">
                 <h2>Coronavirus Tracker Application</h2>
-            </div>
-            <div class="col-sm-3 my-auto">
-                <a href="https://github.com/furkankahvecii/coronavirus-tracker" style="float:right;"
-                    class="btn btn-primary btn active btn-sm " role="button" aria-pressed="true" target="_blank">Source
-                    Code</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
                 <p>This application lists the current number of cases reported across the globe</p>
             </div>
+            <div class="col-sm-3 my-auto d-flex justify-content-end">
+                <a href="https://github.com/furkankahvecii/coronavirus-tracker" class="btn btn-primary active"
+                    role="button" aria-pressed="true" target="_blank">
+                    Source Code
+                </a>
+            </div>
         </div>
-
 
         <div class="jumbotron">
             <div class="container">
@@ -123,18 +126,9 @@
 
         <div id="datatable">
             <div class="row">
-                <div class="col-9"></div>
-                <div class="col-3">
-                    <div class="form-group mb-4">
-                        <input type="text" placeholder="Search" class="form-control border-dark" id="search">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
-                        <table class="table table-condensed table-hover table-striped">
+                        <table class="table dataTable hover order-column row-border stripe">
                             <thead>
                                 <tr>
                                     <th scope="col">State</th>
@@ -145,7 +139,7 @@
                                     <th scope="col">Changes since last day</th>
                                 </tr>
                             </thead>
-                            <tbody id="myTable">
+                            <tbody>
                                 <?php foreach($results as $line){ ?>
                                 <tr>
                                     <td><?php echo $line['STATE'];?></td>
@@ -171,15 +165,18 @@
 
     </div>
 </body>
-
 </html>
-
 <?php }?>
-
 
 <script>
     $(document).ready(function () {
         $('#datatable').hide();
+
+        $('table').DataTable({
+            order: [],
+            paging: true,
+            "pageLength": 100,
+        });
 
         document.onkeyup = function (e) {
             if (e.which == 67) {
@@ -187,16 +184,7 @@
             }
         };
 
-        $("#search").on("keyup", function () {
-            var value = $(this).val().toLowerCase();
-            $("#myTable tr").filter(function () {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-            });
-        });
     });
-</script>
-
-<script>
     $(function () {
         $('#toggle-event').change(function () {
             var isActive = ($(this).prop('checked'));
