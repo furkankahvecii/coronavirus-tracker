@@ -27,13 +27,11 @@
 
         function drawRegionsMap() {
             var data = google.visualization.arrayToDataTable([
-                ['Country', 'TotalCase', 'TotalDeath'], <
-                ? php foreach($maps as $each) {
-                    echo '["'.$each['COUNTRY'].
-                    '",'.$each['TOTAL_CASE'].
-                    ','.$each['TOTAL_DEATH'].
-                    '],';
-                } ? >
+                ['Country', 'TotalCase', 'TotalDeath'], <?php foreach($maps as $each) {
+                    echo '["'.$each['COUNTRY'].'",'.
+                    $each['TOTAL_CASE'].','.
+                    $each['TOTAL_DEATH'].'],';
+                } ?>
             ]);
 
             var options = {
