@@ -3,8 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class CoronaVirusData extends CI_Controller 
 {
-    private $url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-";
-    private $csvColumns =  array("Confirmed","Deaths","Recovered");
+    private $url = "https://coronavirus-19-api.herokuapp.com/countries";
 
     public function __construct()
     {
@@ -13,45 +12,23 @@ class CoronaVirusData extends CI_Controller
     
     public function index()
     {
-        $urlCsvColumns;
+        $data['RESULT_DATA'] = array();
+        $data['TOTAL_CASE_REPORTED'] = 0;
+        $data['TOTAL_DEATHS_REPORTED'] = 0;
+        $data['TOTAL_RECOVERED_REPORTED'] = 0;
+        $data['TOTAL_CASE_REPORTED_LASTDAY'] = 0;
 
-        foreach($this->csvColumns as $each){
-            $sonuc = $this->url.$each;
-            $urlCsvColumns[] = array($sonuc);
-        }
+        $contents = file_get_contents($this->url);
+        if ($contents === false)  $resultJSON = NULL;
+        else    $data['RESULT_DATA'] = json_decode($contents,true);
         
-        $instance = new CoronaVirus($urlCsvColumns,$this->csvColumns);
-        $instance->fetchData();
-        $result = $instance->processCsv();
-        $result['maps'] = $this->mapData($result['results']);
-        usort($result['results'], array($this,'cmp')); // Descending sorting with usort by cmp function
-        //echo "<pre>"; print_r($result); echo "</pre>";
-        $this->load->view('coronavirus',$result);
-    }
-
-    public function mapData($result){
- 
-        $res  = array();
-        foreach($result as $vals){
-            if(array_key_exists($vals['COUNTRY'],$res)){
-                $res[$vals['COUNTRY']]['TOTAL_CASE']           += $vals['TOTAL_CASE'];
-                $res[$vals['COUNTRY']]['TOTAL_CASE_LASTDAY']   += $vals['TOTAL_CASE_LASTDAY'];
-                $res[$vals['COUNTRY']]['TOTAL_DEATH']          += $vals['TOTAL_DEATH'];
-                $res[$vals['COUNTRY']]['TOTAL_RECOVERED']      += $vals['TOTAL_RECOVERED'];
-            }
-            else{
-                unset($vals['STATE']);
-                $res[$vals['COUNTRY']]  = $vals;
-            }
+        foreach($data['RESULT_DATA'] as $result){
+            $data['TOTAL_CASE_REPORTED'] += $result['cases'];
+            $data['TOTAL_DEATHS_REPORTED'] += $result['deaths'];            
+            $data['TOTAL_RECOVERED_REPORTED'] += $result['recovered'];
+            $data['TOTAL_CASE_REPORTED_LASTDAY'] += $result['cases']-$result['todayCases'];
         }
-        return $res;
-    }
 
-    function cmp($a, $b)
-    {
-        if ($a['TOTAL_CASE'] == $b['TOTAL_CASE']) {
-            return 0;
-        }
-        return ($a['TOTAL_CASE'] < $b['TOTAL_CASE']) ? 1 : -1; // return ($a['TOTAL_CASE'] < $b['TOTAL_CASE']) ? -1 : 1; -> ASC
+        $this->load->view('coronavirus',$data);
     }
 }

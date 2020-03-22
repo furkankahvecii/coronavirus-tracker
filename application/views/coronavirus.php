@@ -27,10 +27,11 @@
 
         function drawRegionsMap() {
             var data = google.visualization.arrayToDataTable([
-                ['Country', 'TotalCase', 'TotalDeath'], <?php foreach($maps as $each) {
-                    echo '["'.$each['COUNTRY'].'",'.
-                    $each['TOTAL_CASE'].','.
-                    $each['TOTAL_DEATH'].'],';
+                ['Country', 'TotalCase', 'TotalDeath'], <?php foreach($RESULT_DATA as $result) {
+                    echo '["'.$result['country'].
+                    '",'.$result['cases'].
+                    ','.$result['deaths'].
+                    '],';
                 } ?>
             ]);
 
@@ -129,7 +130,6 @@
                         <table class="table dataTable hover order-column row-border stripe">
                             <thead>
                                 <tr>
-                                    <th scope="col">State</th>
                                     <th scope="col">Country</th>
                                     <th scope="col">Total cases</th>
                                     <th scope="col">Total death</th>
@@ -138,14 +138,13 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach($results as $line){ ?>
+                                <?php foreach($RESULT_DATA as $result){ ?>
                                 <tr>
-                                    <td><?php echo $line['STATE'];?></td>
-                                    <td><?php echo $line['COUNTRY'];?></td>
-                                    <td><?php echo $line['TOTAL_CASE'];?></td>
-                                    <td><?php echo $line['TOTAL_DEATH'];?></td>
-                                    <td><?php echo $line['TOTAL_RECOVERED'];?></td>
-                                    <td><?php echo $line['TOTAL_CASE'] - $line['TOTAL_CASE_LASTDAY'];?></td>
+                                    <td><?php echo $result['country'];?></td>
+                                    <td><?php echo $result['cases'];?></td>
+                                    <td><?php echo $result['deaths'];?></td>
+                                    <td><?php echo $result['recovered'];?></td>
+                                    <td><?php echo $result['todayCases'];?></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>
