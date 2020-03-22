@@ -22,6 +22,14 @@ class CoronaVirusData extends CI_Controller
         if ($contents === false)  $resultJSON = NULL;
         else    $data['RESULT_DATA'] = json_decode($contents,true);
         
+        $geochart_country_update = array(
+            "USA"=>"US",
+            "UK"=>"United Kingdom",
+            "S. Korea"=>"South Korea",
+        );
+
+        $data['RESULT_DATA'] = $this->change_country($data['RESULT_DATA'],$geochart_country_update);
+
         foreach($data['RESULT_DATA'] as $result){
             $data['TOTAL_CASE_REPORTED'] += $result['cases'];
             $data['TOTAL_DEATHS_REPORTED'] += $result['deaths'];            
@@ -30,5 +38,18 @@ class CoronaVirusData extends CI_Controller
         }
 
         $this->load->view('coronavirus',$data);
+    }
+
+    private function change_country($data,$geochart_country_update)
+    {
+        $i = 0;
+        foreach($data as $each){
+           if(array_key_exists($each['country'], $geochart_country_update)){
+                $data[$i]['country'] = $geochart_country_update[$each['country']];
+            }
+        $i++;  
+       }
+
+       return $data;
     }
 }

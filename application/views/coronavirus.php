@@ -3,7 +3,7 @@
     <title>Coronavirus Tracker Application</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="Corona Virus Tracker by Furkan KAHVECİ">
-    <meta name="keywords" content="Corona, COVID-19, Coronavirus, tracker">
+    <meta name="keywords" content="Corona, COVID-19, Coronavirus, Coronavirus Tracker">
     <meta name="author" content="Furkan KAHVECİ">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -194,4 +194,5 @@
             }
         })
     })
+    
 </script>
