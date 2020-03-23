@@ -76,13 +76,13 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="card text-center">
                                 <div class="card-heading">
-                                    <h4 class="card-title text-muted mb-0">Total Case</h4>
+                                    <h4 class="card-title text-muted mb-0">Total Cases</h4>
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
                                             class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_CASE_REPORTED;?></b>
                                     </h2>
-                                    <p class="text-muted m-b-0 m-t-20"><b>48%</b> From Last 24 Hours</p>
+                                    <p class="text-muted m-b-0 m-t-20"><b>Reported as of Today</b></p>
                                 </div>
                             </div>
                         </div>
@@ -90,13 +90,13 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="card text-center">
                                 <div class="card-heading">
-                                    <h4 class="card-title text-muted mb-0">Total Death</h4>
+                                    <h4 class="card-title text-muted mb-0">Total Deaths</h4>
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
                                             class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_DEATHS_REPORTED;?></b>
                                     </h2>
-                                    <p class="text-muted m-b-0 m-t-20"><b>42%</b> Orders in Last 10 months</p>
+                                    <p class="text-muted m-b-0 m-t-20"><b>Reported as of Today</b></p>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
                                     <h2 class="m-t-0 m-b-15"><i
                                             class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_RECOVERED_REPORTED;?></b>
                                     </h2>
-                                    <p class="text-muted m-b-0 m-t-20"><b>22%</b> From Last 24 Hours</p>
+                                    <p class="text-muted m-b-0 m-t-20"><b>Reported as of Today</b></p>
                                 </div>
                             </div>
                         </div>
@@ -118,13 +118,13 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="card text-center">
                                 <div class="card-heading">
-                                    <h4 class="card-title text-muted mb-0">New cases since previous day</h4>
+                                    <h4 class="card-title text-muted mb-0">New Cases</h4>
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
                                             class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_CASE_REPORTED_LASTDAY;?></b>
                                     </h2>
-                                    <p class="text-muted m-b-0 m-t-20"><b>35%</b> From Last 1 Month</p>
+                                    <p class="text-muted m-b-0 m-t-20"><b>Since Previous Day</b></p>
                                 </div>
                             </div>
                         </div>
