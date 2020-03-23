@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class CoronaVirusData extends CI_Controller 
+class CoronaVirus extends CI_Controller 
 {
     private $url = "https://coronavirus-19-api.herokuapp.com/countries";
 
@@ -37,7 +37,7 @@ class CoronaVirusData extends CI_Controller
             $data['TOTAL_CASE_REPORTED_LASTDAY'] += $result['cases']-$result['todayCases'];
         }
 
-        $this->load->view('coronavirus',$data);
+        $this->load->view('coronavirus_vw',$data);
     }
 
     private function change_country($data,$geochart_country_update)
