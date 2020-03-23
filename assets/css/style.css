@@ -137,6 +137,19 @@ a:focus {
   left: 240px;
 }
 
+.footerchange{
+  text-align:center;
+  background-color: #323c48;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  bottom: 0px;
+  color: #98a4b9;
+  text-align: center !important;
+  font-size:16px;
+  padding:12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';  
+  
+}
+
 #wrapper {
   height: 100%;
   overflow: hidden;
@@ -4147,3 +4160,4 @@ File: Responsive
     display: none !important;
   }
 }
+

@@ -13,29 +13,18 @@ class CoronaVirus extends CI_Controller
     public function index()
     {
         $data['RESULT_DATA'] = array();
-        $data['TOTAL_CASE_REPORTED'] = 0;
-        $data['TOTAL_DEATHS_REPORTED'] = 0;
-        $data['TOTAL_RECOVERED_REPORTED'] = 0;
-        $data['TOTAL_CASE_REPORTED_LASTDAY'] = 0;
 
         $contents = file_get_contents($this->url);
         if ($contents === false)  $resultJSON = NULL;
         else    $data['RESULT_DATA'] = json_decode($contents,true);
         
-        $geochart_country_update = array(
-            "USA"=>"US",
-            "UK"=>"United Kingdom",
-            "S. Korea"=>"South Korea",
-        );
-
+        $geochart_country_update = array( "USA"=>"US", "UK"=>"United Kingdom", "S. Korea"=>"South Korea");
         $data['RESULT_DATA'] = $this->change_country($data['RESULT_DATA'],$geochart_country_update);
 
-        foreach($data['RESULT_DATA'] as $result){
-            $data['TOTAL_CASE_REPORTED'] += $result['cases'];
-            $data['TOTAL_DEATHS_REPORTED'] += $result['deaths'];            
-            $data['TOTAL_RECOVERED_REPORTED'] += $result['recovered'];
-            $data['TOTAL_CASE_REPORTED_LASTDAY'] += $result['cases']-$result['todayCases'];
-        }
+        $data['TOTAL_CASE_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'cases'));
+        $data['TOTAL_DEATHS_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'deaths'));          
+        $data['TOTAL_RECOVERED_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'recovered')); 
+        $data['TOTAL_CASE_REPORTED_LASTDAY'] = $data['TOTAL_CASE_REPORTED'] - array_sum(array_column($data['RESULT_DATA'],'todayCases'));
 
         $this->load->view('coronavirus_vw',$data);
     }
@@ -47,7 +36,7 @@ class CoronaVirus extends CI_Controller
            if(array_key_exists($each['country'], $geochart_country_update)){
                 $data[$i]['country'] = $geochart_country_update[$each['country']];
             }
-        $i++;  
+            $i++;  
        }
 
        return $data;

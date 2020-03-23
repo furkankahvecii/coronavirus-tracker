@@ -65,10 +65,13 @@
 
     <div id="content-page">
         <div class="content">
-            <div class="">
-                <div class="page-header-title" style="margin-top:3px;">
-                    <h4 class="page-title" style="text-align:center;">Coronavirus Tracker Application</h4>
+            <div class="row ">
+                <div class=" col-lg-12">
+                    <div class="page-header-title" style="margin-top:1px;">
+                        <h4 class="page-title" style="text-align:center;">Coronavirus Tracker Application</h4>
+                    </div>
                 </div>
+                
             </div>
             <div class="page-content-wrapper ">
                 <div class="container-fluid">
@@ -161,7 +164,7 @@
                                                     <tbody>
                                                         <?php foreach($RESULT_DATA as $result){ ?>
                                                         <tr>
-                                                            <td><?php echo $result['country'];?></td>
+                                                            <td><img src="https://www.gstatic.com/onebox/sports/logos/flags/<?php echo strtolower(str_replace(" ","_",$result['country'])); ?>_icon_square.svg" height="20" width="20"> <?php echo $result['country'];?></td>
                                                             <td><?php echo $result['cases'];?></td>
                                                             <td><?php echo $result['casesPerOneMillion'];?></td>
                                                             <td><?php echo $result['deaths'];?></td>
@@ -176,10 +179,22 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row ">
+                            <div class=" col-lg-12">
+                                    <div class="page-title footerchange" >© 2020 Coronavirus Tracker - Furkan KAHVECİ</div>
+                                </div>
+                            </div>
+                            
                         </div>
+                        </div>
+                      
                     </div>
+               
                 </div>
+                
             </div> 
+            
+           
         </div> 
     </div>
            
