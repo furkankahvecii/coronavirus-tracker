@@ -23,3 +23,10 @@ Data is provided by JHU CSSE (https://github.com/CSSEGISandData/COVID-19).
 ### Libraries
 * [Codeigniter](https://github.com/bcit-ci/CodeIgniter): Open Source PHP Framework.
 * [GeoChart](https://developers.google.com/chart/interactive/docs/gallery/geochart): Show a map of a country, continent, or region.
+
+## Contribute
+Please feel free to contribute pull requests or create issues for bugs and feature requests.
+
+## Contributors
+<img src="https://avatars0.githubusercontent.com/u/7875387?s=400&u=2676a160ca106c14d67b1b8c0e83e9c2ba04ea73&v=4" alt="drawing" width="100" height="100"/>
+<a href="https://github.com/satrianivzla" target="_blank">Simon</a>
