@@ -20,12 +20,14 @@ class CoronaVirus extends CI_Controller
         
         $geochart_country_update = array( "USA"=>"US", "UK"=>"United Kingdom", "S. Korea"=>"South Korea");
         $data['RESULT_DATA'] = $this->change_country($data['RESULT_DATA'],$geochart_country_update);
-
+        
         $data['TOTAL_CASE_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'cases'));
         $data['TOTAL_DEATHS_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'deaths'));          
-        $data['TOTAL_RECOVERED_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'recovered')); 
+        $data['TOTAL_RECOVERED_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'recovered'));
         $data['TOTAL_CASE_REPORTED_LASTDAY'] = $data['TOTAL_CASE_REPORTED'] - array_sum(array_column($data['RESULT_DATA'],'todayCases'));
 
+        $data['MAP'] = $data['RESULT_DATA'];
+        $data['RESULT_DATA'] = $this->number_format_array($data['RESULT_DATA']);
         $this->load->view('coronavirus_vw',$data);
     }
 
@@ -40,5 +42,16 @@ class CoronaVirus extends CI_Controller
        }
 
        return $data;
+    }
+
+    private function number_format_array($data){
+        $keys = array_keys($data[0]);
+        for($i=0;$i<count($data);$i++){
+            foreach($keys as $key){
+                $data[$i][$key] = is_numeric($data[$i][$key]) ? number_format($data[$i][$key]) : $data[$i][$key];
+            }
+        }
+    
+        return $data;
     }
 }
