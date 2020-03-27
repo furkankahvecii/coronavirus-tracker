@@ -164,9 +164,7 @@
                                                     <tbody>
                                                         <?php foreach($RESULT_DATA as $result){ ?>
                                                         <tr>
-                                                            <td><img src="https://www.gstatic.com/onebox/sports/logos/flags/<?php echo strtolower(str_replace(" ","_",$result['image'])); ?>_icon_square.svg"
-                                                                    height="20" width="20">
-                                                                <?php echo $result['country'];?></td>
+                                                            <td><img src="https://www.gstatic.com/onebox/sports/logos/flags/<?php echo strtolower(str_replace(" ","_",$result['image'])); ?>_icon_square.svg" height="20" width="20"> <?php echo $result['country'];?></td>
                                                             <td><?php echo number_format($result['cases']);?></td>
                                                             <td><?php echo number_format($result['casesPerOneMillion']);?></td>
                                                             <td><?php echo number_format($result['deaths']);?></td>
