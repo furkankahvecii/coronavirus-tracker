@@ -27,7 +27,9 @@ class CoronaVirus extends CI_Controller
         $data['TOTAL_CASE_REPORTED_LASTDAY'] = $data['TOTAL_CASE_REPORTED'] - array_sum(array_column($data['RESULT_DATA'],'todayCases'));
 
         $data['MAP'] = $data['RESULT_DATA'];
+        usort($data['RESULT_DATA'], array($this,'cmp')); //asc
         $data['RESULT_DATA'] = $this->number_format_array($data['RESULT_DATA']);
+
         $this->load->view('coronavirus_vw',$data);
     }
 
@@ -53,5 +55,13 @@ class CoronaVirus extends CI_Controller
         }
     
         return $data;
+    }
+
+    function cmp($a, $b)
+    {
+        if ($a['cases'] == $b['cases']) {
+            return 0;
+        }
+        return ($a['cases'] < $b['cases']) ? 1 : -1;
     }
 }
