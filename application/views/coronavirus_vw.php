@@ -159,6 +159,7 @@
                                                             <th>Deaths</th>
                                                             <th>Recovered</th>
                                                             <th>Changes since last day</th>
+                                                            <th>First Case</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -170,6 +171,7 @@
                                                             <td><?php echo number_format($result['deaths']);?></td>
                                                             <td><?php echo number_format($result['recovered']);?></td>
                                                             <td><?php echo number_format($result['todayCases']);?></td>
+                                                            <td><?php echo ($result['firstCase']);?></td>
                                                         </tr>
                                                         <?php } ?>
                                                     </tbody>
