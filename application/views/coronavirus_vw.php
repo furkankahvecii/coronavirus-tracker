@@ -218,6 +218,8 @@
                 order: [],
                 paging: true,
                 "pageLength": 25,
+                "pagingType": "full_numbers",
+                "dom": '<"top"flp>rt<"bottom"ip><"clear">',
             });
         });
     </script>
