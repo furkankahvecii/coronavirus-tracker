@@ -5,7 +5,7 @@ class CoronaVirus extends CI_Controller
 {
     private $url = "https://coronavirus-19-api.herokuapp.com/countries";
     private $img_url = array( 
-        "USA"=>"United States",
+        "US"=>"United States",
         "UK"=>"United Kingdom", 
         "S. Korea"=>"South Korea", 
         "Czechia"=>"Czech Republic", 
