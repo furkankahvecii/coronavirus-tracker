@@ -23,7 +23,8 @@ class CoronaVirus extends CI_Controller
         "Eswatini" => "Swaziland",
         "Curaçao" => "Curacao",
         "Cabo Verde" => "Cape Verde",
-        "Timor-Leste" => "East Timor",);    
+        "Timor-Leste" => "East Timor",
+        "Congo" => "Democratic Republic Congo Brazzaville");    
     
     private $geochart_country= array( "USA"=>"US", "UK"=>"United Kingdom", "S. Korea"=>"South Korea");
 
