@@ -33,7 +33,8 @@ class CoronaVirus extends CI_Controller
         "British Virgin Islands" => "United Kingdom",
         "Guinea-Bissau" => "Guinea Bissau",
         "St. Barth" => "France",
-        "CAR" => "Central African Republic");
+        "CAR" => "Central African Republic",
+        "Caribbean Netherlands" => "Netherlands");
     
     private $geochart_country= array( "USA"=>"US", "UK"=>"United Kingdom", "S. Korea"=>"South Korea");
 
