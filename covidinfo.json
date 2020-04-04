@@ -1,0 +1,2082 @@
+    [
+        {
+            "country": "Afghanistan",
+            "cases": "299",
+            "todayCases": "18",
+            "deaths": "7",
+            "recovered": "10",
+            "totalTests": "0",
+            "image": "Afghanistan",
+            "geochart": "Afghanistan"
+          },
+          {
+            "country": "Albania",
+            "cases": "333",
+            "todayCases": "29",
+            "deaths": "20",
+            "recovered": "99",
+            "totalTests": "2247",
+            "image": "Albania",
+            "geochart": "Albania"
+          },
+          {
+            "country": "Algeria",
+            "cases": "1251",
+            "todayCases": "80",
+            "deaths": "130",
+            "recovered": "90",
+            "totalTests": "3359",
+            "image": "Algeria",
+            "geochart": "Algeria"
+          },
+          {
+            "country": "Andorra",
+            "cases": "466",
+            "todayCases": "27",
+            "deaths": "17",
+            "recovered": "21",
+            "totalTests": "0",
+            "image": "Andorra",
+            "geochart": "Andorra"
+          },
+          {
+            "country": "Angola",
+            "cases": "10",
+            "todayCases": "2",
+            "deaths": "2",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Angola",
+            "geochart": "Angola"
+          },
+          {
+            "country": "Anguilla",
+            "cases": "3",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Anguilla",
+            "geochart": "Anguilla"
+          },
+          {
+            "country": "Antigua and Barbuda",
+            "cases": "15",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "40",
+            "image": "Antigua and Barbuda",
+            "geochart": "Antigua and Barbuda"
+          },
+          {
+            "country": "Argentina",
+            "cases": "1353",
+            "todayCases": "0",
+            "deaths": "42",
+            "recovered": "279",
+            "totalTests": "8488",
+            "image": "Argentina",
+            "geochart": "Argentina"
+          },
+          {
+            "country": "Armenia",
+            "cases": "770",
+            "todayCases": "34",
+            "deaths": "7",
+            "recovered": "43",
+            "totalTests": "3994",
+            "image": "Armenia",
+            "geochart": "Armenia"
+          },
+          {
+            "country": "Aruba",
+            "cases": "64",
+            "todayCases": "2",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "863",
+            "image": "Aruba",
+            "geochart": "Aruba"
+          },
+          {
+            "country": "Australia",
+            "cases": "5550",
+            "todayCases": "96",
+            "deaths": "30",
+            "recovered": "585",
+            "totalTests": "285675",
+            "image": "Australia",
+            "geochart": "Australia"
+          },
+          {
+            "country": "Austria",
+            "cases": "11781",
+            "todayCases": "257",
+            "deaths": "186",
+            "recovered": "2507",
+            "totalTests": "104134",
+            "image": "Austria",
+            "geochart": "Austria"
+          },
+          {
+            "country": "Azerbaijan",
+            "cases": "521",
+            "todayCases": "78",
+            "deaths": "5",
+            "recovered": "32",
+            "totalTests": "35000",
+            "image": "Azerbaijan",
+            "geochart": "Azerbaijan"
+          },
+          {
+            "country": "Bahamas",
+            "cases": "24",
+            "todayCases": "0",
+            "deaths": "3",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Bahamas",
+            "geochart": "Bahamas"
+          },
+          {
+            "country": "Bahrain",
+            "cases": "688",
+            "todayCases": "16",
+            "deaths": "4",
+            "recovered": "423",
+            "totalTests": "39379",
+            "image": "Bahrain",
+            "geochart": "Bahrain"
+          },
+          {
+            "country": "Bangladesh",
+            "cases": "70",
+            "todayCases": "9",
+            "deaths": "8",
+            "recovered": "30",
+            "totalTests": "2086",
+            "image": "Bangladesh",
+            "geochart": "Bangladesh"
+          },
+          {
+            "country": "Barbados",
+            "cases": "52",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "382",
+            "image": "Barbados",
+            "geochart": "Barbados"
+          },
+          {
+            "country": "Belarus",
+            "cases": "440",
+            "todayCases": "89",
+            "deaths": "5",
+            "recovered": "53",
+            "totalTests": "32000",
+            "image": "Belarus",
+            "geochart": "Belarus"
+          },
+          {
+            "country": "Belgium",
+            "cases": "18431",
+            "todayCases": "1661",
+            "deaths": "1283",
+            "recovered": "3247",
+            "totalTests": "62867",
+            "image": "Belgium",
+            "geochart": "Belgium"
+          },
+          {
+            "country": "Belize",
+            "cases": "4",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "25",
+            "image": "Belize",
+            "geochart": "Belize"
+          },
+          {
+            "country": "Benin",
+            "cases": "16",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Benin",
+            "geochart": "Benin"
+          },
+          {
+            "country": "Bermuda",
+            "cases": "35",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "14",
+            "totalTests": "272",
+            "image": "Bermuda",
+            "geochart": "Bermuda"
+          },
+          {
+            "country": "Bhutan",
+            "cases": "5",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Bhutan",
+            "geochart": "Bhutan"
+          },
+          {
+            "country": "Bolivia",
+            "cases": "139",
+            "todayCases": "7",
+            "deaths": "10",
+            "recovered": "1",
+            "totalTests": "591",
+            "image": "Bolivia",
+            "geochart": "Bolivia"
+          },
+          {
+            "country": "Bosnia and Herzegovina",
+            "cases": "624",
+            "todayCases": "45",
+            "deaths": "21",
+            "recovered": "30",
+            "totalTests": "4696",
+            "image": "Bosnia Herzegovina",
+            "geochart": "Bosnia and Herzegovina"
+          },
+          {
+            "country": "Botswana",
+            "cases": "4",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "175",
+            "image": "Botswana",
+            "geochart": "Botswana"
+          },
+          {
+            "country": "Brazil",
+            "cases": "10278",
+            "todayCases": "1084",
+            "deaths": "431",
+            "recovered": "127",
+            "totalTests": "54824",
+            "image": "Brazil",
+            "geochart": "Brazil"
+          },
+          {
+            "country": "British Virgin Islands",
+            "cases": "3",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "United Kingdom",
+            "geochart": "British Virgin Islands"
+          },
+          {
+            "country": "Brunei",
+            "cases": "135",
+            "todayCases": "1",
+            "deaths": "1",
+            "recovered": "66",
+            "totalTests": "7801",
+            "image": "Brunei",
+            "geochart": "Brunei"
+          },
+          {
+            "country": "Bulgaria",
+            "cases": "503",
+            "todayCases": "18",
+            "deaths": "17",
+            "recovered": "34",
+            "totalTests": "566",
+            "image": "Bulgaria",
+            "geochart": "Bulgaria"
+          },
+          {
+            "country": "Burkina Faso",
+            "cases": "318",
+            "todayCases": "16",
+            "deaths": "16",
+            "recovered": "66",
+            "totalTests": "0",
+            "image": "Burkina Faso",
+            "geochart": "Burkina Faso"
+          },
+          {
+            "country": "Burundi",
+            "cases": "3",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "2",
+            "image": "Burundi",
+            "geochart": "Burundi"
+          },
+          {
+            "country": "Cabo Verde",
+            "cases": "7",
+            "todayCases": "1",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Cape Verde",
+            "geochart": "Cabo Verde"
+          },
+          {
+            "country": "Cambodia",
+            "cases": "114",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "50",
+            "totalTests": "5768",
+            "image": "Cambodia",
+            "geochart": "Cambodia"
+          },
+          {
+            "country": "Cameroon",
+            "cases": "555",
+            "todayCases": "46",
+            "deaths": "9",
+            "recovered": "17",
+            "totalTests": "0",
+            "image": "Cameroon",
+            "geochart": "Cameroon"
+          },
+          {
+            "country": "Canada",
+            "cases": "13912",
+            "todayCases": "1537",
+            "deaths": "231",
+            "recovered": "2595",
+            "totalTests": "302745",
+            "image": "Canada",
+            "geochart": "Canada"
+          },
+          {
+            "country": "CAR",
+            "cases": "8",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Central African Republic",
+            "geochart": "CAR"
+          },
+          {
+            "country": "Caribbean Netherlands",
+            "cases": "2",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "10",
+            "image": "Netherlands",
+            "geochart": "Caribbean Netherlands"
+          },
+          {
+            "country": "Cayman Islands",
+            "cases": "35",
+            "todayCases": "6",
+            "deaths": "1",
+            "recovered": "1",
+            "totalTests": "319",
+            "image": "Cayman Islands",
+            "geochart": "Cayman Islands"
+          },
+          {
+            "country": "Chad",
+            "cases": "9",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Chad",
+            "geochart": "Chad"
+          },
+          {
+            "country": "Channel Islands",
+            "cases": "262",
+            "todayCases": "30",
+            "deaths": "5",
+            "recovered": "13",
+            "totalTests": "0",
+            "image": "Jersey",
+            "geochart": "Channel Islands"
+          },
+          {
+            "country": "Chile",
+            "cases": "4161",
+            "todayCases": "424",
+            "deaths": "27",
+            "recovered": "528",
+            "totalTests": "48613",
+            "image": "Chile",
+            "geochart": "Chile"
+          },
+          {
+            "country": "China",
+            "cases": "81639",
+            "todayCases": "19",
+            "deaths": "3326",
+            "recovered": "76755",
+            "totalTests": "0",
+            "image": "China",
+            "geochart": "China"
+          },
+          {
+            "country": "Colombia",
+            "cases": "1406",
+            "todayCases": "139",
+            "deaths": "32",
+            "recovered": "85",
+            "totalTests": "21202",
+            "image": "Colombia",
+            "geochart": "Colombia"
+          },
+          {
+            "country": "Congo",
+            "cases": "22",
+            "todayCases": "0",
+            "deaths": "2",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Democratic Republic Congo Brazzaville",
+            "geochart": "Congo"
+          },
+          {
+            "country": "Costa Rica",
+            "cases": "435",
+            "todayCases": "19",
+            "deaths": "2",
+            "recovered": "13",
+            "totalTests": "4654",
+            "image": "Costa Rica",
+            "geochart": "Costa Rica"
+          },
+          {
+            "country": "Croatia",
+            "cases": "1126",
+            "todayCases": "47",
+            "deaths": "12",
+            "recovered": "119",
+            "totalTests": "9833",
+            "image": "Croatia",
+            "geochart": "Croatia"
+          },
+          {
+            "country": "Cuba",
+            "cases": "288",
+            "todayCases": "19",
+            "deaths": "6",
+            "recovered": "15",
+            "totalTests": "3342",
+            "image": "Cuba",
+            "geochart": "Cuba"
+          },
+          {
+            "country": "Curaçao",
+            "cases": "11",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "5",
+            "totalTests": "0",
+            "image": "Curacao",
+            "geochart": "Curaçao"
+          },
+          {
+            "country": "Cyprus",
+            "cases": "426",
+            "todayCases": "30",
+            "deaths": "11",
+            "recovered": "33",
+            "totalTests": "10154",
+            "image": "Cyprus",
+            "geochart": "Cyprus"
+          },
+          {
+            "country": "Czechia",
+            "cases": "4362",
+            "todayCases": "172",
+            "deaths": "59",
+            "recovered": "78",
+            "totalTests": "74170",
+            "image": "Czech Republic",
+            "geochart": "Czechia"
+          },
+          {
+            "country": "Denmark",
+            "cases": "4077",
+            "todayCases": "320",
+            "deaths": "161",
+            "recovered": "1283",
+            "totalTests": "40863",
+            "image": "Denmark",
+            "geochart": "Denmark"
+          },
+          {
+            "country": "Diamond Princess",
+            "cases": "712",
+            "todayCases": "0",
+            "deaths": "11",
+            "recovered": "619",
+            "totalTests": "0",
+            "image": "United Kingdom",
+            "geochart": "Diamond Princess"
+          },
+          {
+            "country": "Djibouti",
+            "cases": "50",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "8",
+            "totalTests": "0",
+            "image": "Djibouti",
+            "geochart": "Djibouti"
+          },
+          {
+            "country": "Dominica",
+            "cases": "14",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Dominica",
+            "geochart": "Dominica"
+          },
+          {
+            "country": "Dominican Republic",
+            "cases": "1488",
+            "todayCases": "0",
+            "deaths": "68",
+            "recovered": "16",
+            "totalTests": "4200",
+            "image": "Dominican Republic",
+            "geochart": "Dominican Republic"
+          },
+          {
+            "country": "DRC",
+            "cases": "148",
+            "todayCases": "0",
+            "deaths": "16",
+            "recovered": "3",
+            "totalTests": "0",
+            "image": "Denmark",
+            "geochart": "DRC"
+          },
+          {
+            "country": "Ecuador",
+            "cases": "3465",
+            "todayCases": "97",
+            "deaths": "172",
+            "recovered": "100",
+            "totalTests": "10317",
+            "image": "Ecuador",
+            "geochart": "Ecuador"
+          },
+          {
+            "country": "Egypt",
+            "cases": "1070",
+            "todayCases": "85",
+            "deaths": "71",
+            "recovered": "241",
+            "totalTests": "25000",
+            "image": "Egypt",
+            "geochart": "Egypt"
+          },
+          {
+            "country": "El Salvador",
+            "cases": "56",
+            "todayCases": "10",
+            "deaths": "3",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "El Salvador",
+            "geochart": "El Salvador"
+          },
+          {
+            "country": "Equatorial Guinea",
+            "cases": "16",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "Equatorial Guinea",
+            "geochart": "Equatorial Guinea"
+          },
+          {
+            "country": "Eritrea",
+            "cases": "29",
+            "todayCases": "7",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Eritrea",
+            "geochart": "Eritrea"
+          },
+          {
+            "country": "Estonia",
+            "cases": "1039",
+            "todayCases": "78",
+            "deaths": "13",
+            "recovered": "59",
+            "totalTests": "19091",
+            "image": "Estonia",
+            "geochart": "Estonia"
+          },
+          {
+            "country": "Eswatini",
+            "cases": "9",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Swaziland",
+            "geochart": "Eswatini"
+          },
+          {
+            "country": "Ethiopia",
+            "cases": "38",
+            "todayCases": "3",
+            "deaths": "0",
+            "recovered": "4",
+            "totalTests": "1222",
+            "image": "Ethiopia",
+            "geochart": "Ethiopia"
+          },
+          {
+            "country": "Faeroe Islands",
+            "cases": "181",
+            "todayCases": "2",
+            "deaths": "0",
+            "recovered": "93",
+            "totalTests": "4800",
+            "image": "Faroe Islands",
+            "geochart": "Faeroe Islands"
+          },
+          {
+            "country": "Falkland Islands",
+            "cases": "1",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Falkland Islands",
+            "geochart": "Falkland Islands"
+          },
+          {
+            "country": "Fiji",
+            "cases": "12",
+            "todayCases": "5",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Fiji",
+            "geochart": "Fiji"
+          },
+          {
+            "country": "Finland",
+            "cases": "1882",
+            "todayCases": "267",
+            "deaths": "25",
+            "recovered": "300",
+            "totalTests": "29000",
+            "image": "Finland",
+            "geochart": "Finland"
+          },
+          {
+            "country": "France",
+            "cases": "89953",
+            "todayCases": "7788",
+            "deaths": "7560",
+            "recovered": "15438",
+            "totalTests": "224254",
+            "image": "France",
+            "geochart": "France"
+          },
+          {
+            "country": "French Guiana",
+            "cases": "57",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "22",
+            "totalTests": "0",
+            "image": "French Guiana",
+            "geochart": "French Guiana"
+          },
+          {
+            "country": "French Polynesia",
+            "cases": "40",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "583",
+            "image": "French Polynesia",
+            "geochart": "French Polynesia"
+          },
+          {
+            "country": "Gabon",
+            "cases": "21",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "Gabon",
+            "geochart": "Gabon"
+          },
+          {
+            "country": "Gambia",
+            "cases": "4",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Gambia",
+            "geochart": "Gambia"
+          },
+          {
+            "country": "Georgia",
+            "cases": "162",
+            "todayCases": "7",
+            "deaths": "1",
+            "recovered": "36",
+            "totalTests": "0",
+            "image": "Georgia",
+            "geochart": "Georgia"
+          },
+          {
+            "country": "Germany",
+            "cases": "95648",
+            "todayCases": "4489",
+            "deaths": "1428",
+            "recovered": "26400",
+            "totalTests": "918460",
+            "image": "Germany",
+            "geochart": "Germany"
+          },
+          {
+            "country": "Ghana",
+            "cases": "205",
+            "todayCases": "0",
+            "deaths": "5",
+            "recovered": "31",
+            "totalTests": "0",
+            "image": "Ghana",
+            "geochart": "Ghana"
+          },
+          {
+            "country": "Gibraltar",
+            "cases": "98",
+            "todayCases": "3",
+            "deaths": "0",
+            "recovered": "52",
+            "totalTests": "1269",
+            "image": "Gibraltar",
+            "geochart": "Gibraltar"
+          },
+          {
+            "country": "Greece",
+            "cases": "1673",
+            "todayCases": "60",
+            "deaths": "68",
+            "recovered": "78",
+            "totalTests": "22437",
+            "image": "Greece",
+            "geochart": "Greece"
+          },
+          {
+            "country": "Greenland",
+            "cases": "11",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "3",
+            "totalTests": "542",
+            "image": "Greenland",
+            "geochart": "Greenland"
+          },
+          {
+            "country": "Grenada",
+            "cases": "12",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "45",
+            "image": "Grenada",
+            "geochart": "Grenada"
+          },
+          {
+            "country": "Guadeloupe",
+            "cases": "134",
+            "todayCases": "4",
+            "deaths": "7",
+            "recovered": "24",
+            "totalTests": "0",
+            "image": "Guadeloupe",
+            "geochart": "Guadeloupe"
+          },
+          {
+            "country": "Guatemala",
+            "cases": "57",
+            "todayCases": "7",
+            "deaths": "2",
+            "recovered": "15",
+            "totalTests": "0",
+            "image": "Guatemala",
+            "geochart": "Guatemala"
+          },
+          {
+            "country": "Guinea",
+            "cases": "111",
+            "todayCases": "38",
+            "deaths": "0",
+            "recovered": "5",
+            "totalTests": "0",
+            "image": "Guinea",
+            "geochart": "Guinea"
+          },
+          {
+            "country": "Guinea-Bissau",
+            "cases": "18",
+            "todayCases": "3",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Guinea Bissau",
+            "geochart": "Guinea-Bissau"
+          },
+          {
+            "country": "Guyana",
+            "cases": "23",
+            "todayCases": "0",
+            "deaths": "4",
+            "recovered": "0",
+            "totalTests": "83",
+            "image": "Guyana",
+            "geochart": "Guyana"
+          },
+          {
+            "country": "Haiti",
+            "cases": "20",
+            "todayCases": "2",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "200",
+            "image": "Haiti",
+            "geochart": "Haiti"
+          },
+          {
+            "country": "Honduras",
+            "cases": "264",
+            "todayCases": "42",
+            "deaths": "15",
+            "recovered": "3",
+            "totalTests": "0",
+            "image": "Honduras",
+            "geochart": "Honduras"
+          },
+          {
+            "country": "Hong Kong",
+            "cases": "862",
+            "todayCases": "17",
+            "deaths": "4",
+            "recovered": "173",
+            "totalTests": "90000",
+            "image": "Hong Kong",
+            "geochart": "Hong Kong"
+          },
+          {
+            "country": "Hungary",
+            "cases": "678",
+            "todayCases": "55",
+            "deaths": "32",
+            "recovered": "58",
+            "totalTests": "19424",
+            "image": "Hungary",
+            "geochart": "Hungary"
+          },
+          {
+            "country": "Iceland",
+            "cases": "1417",
+            "todayCases": "53",
+            "deaths": "4",
+            "recovered": "396",
+            "totalTests": "23640",
+            "image": "Iceland",
+            "geochart": "Iceland"
+          },
+          {
+            "country": "India",
+            "cases": "3082",
+            "todayCases": "23",
+            "deaths": "86",
+            "recovered": "229",
+            "totalTests": "116608",
+            "image": "India",
+            "geochart": "India"
+          },
+          {
+            "country": "Indonesia",
+            "cases": "2092",
+            "todayCases": "106",
+            "deaths": "191",
+            "recovered": "150",
+            "totalTests": "7193",
+            "image": "Indonesia",
+            "geochart": "Indonesia"
+          },
+          {
+            "country": "Iran",
+            "cases": "55743",
+            "todayCases": "2560",
+            "deaths": "3452",
+            "recovered": "19736",
+            "totalTests": "186000",
+            "image": "Iran",
+            "geochart": "Iran"
+          },
+          {
+            "country": "Iraq",
+            "cases": "878",
+            "todayCases": "58",
+            "deaths": "56",
+            "recovered": "259",
+            "totalTests": "0",
+            "image": "Iraq",
+            "geochart": "Iraq"
+          },
+          {
+            "country": "Ireland",
+            "cases": "4604",
+            "todayCases": "331",
+            "deaths": "137",
+            "recovered": "25",
+            "totalTests": "30213",
+            "image": "Ireland",
+            "geochart": "Ireland"
+          },
+          {
+            "country": "Isle of Man",
+            "cases": "126",
+            "todayCases": "12",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "1319",
+            "image": "Ireland",
+            "geochart": "Isle of Man"
+          },
+          {
+            "country": "Israel",
+            "cases": "7851",
+            "todayCases": "423",
+            "deaths": "44",
+            "recovered": "427",
+            "totalTests": "90394",
+            "image": "Israel",
+            "geochart": "Israel"
+          },
+          {
+            "country": "Italy",
+            "cases": "124632",
+            "todayCases": "4805",
+            "deaths": "15362",
+            "recovered": "20996",
+            "totalTests": "657224",
+            "image": "Italy",
+            "geochart": "Italy"
+          },
+          {
+            "country": "Ivory Coast",
+            "cases": "245",
+            "todayCases": "27",
+            "deaths": "1",
+            "recovered": "25",
+            "totalTests": "0",
+            "image": "Ivory Coast",
+            "geochart": "Ivory Coast"
+          },
+          {
+            "country": "Jamaica",
+            "cases": "53",
+            "todayCases": "0",
+            "deaths": "3",
+            "recovered": "7",
+            "totalTests": "540",
+            "image": "Jamaica",
+            "geochart": "Jamaica"
+          },
+          {
+            "country": "Japan",
+            "cases": "2935",
+            "todayCases": "0",
+            "deaths": "69",
+            "recovered": "514",
+            "totalTests": "39446",
+            "image": "Japan",
+            "geochart": "Japan"
+          },
+          {
+            "country": "Jordan",
+            "cases": "323",
+            "todayCases": "13",
+            "deaths": "5",
+            "recovered": "74",
+            "totalTests": "239",
+            "image": "Jordan",
+            "geochart": "Jordan"
+          },
+          {
+            "country": "Kazakhstan",
+            "cases": "531",
+            "todayCases": "67",
+            "deaths": "5",
+            "recovered": "36",
+            "totalTests": "316",
+            "image": "Kazakhstan",
+            "geochart": "Kazakhstan"
+          },
+          {
+            "country": "Kenya",
+            "cases": "126",
+            "todayCases": "4",
+            "deaths": "4",
+            "recovered": "4",
+            "totalTests": "2201",
+            "image": "Kenya",
+            "geochart": "Kenya"
+          },
+          {
+            "country": "Kuwait",
+            "cases": "479",
+            "todayCases": "62",
+            "deaths": "1",
+            "recovered": "93",
+            "totalTests": "0",
+            "image": "Kuwait",
+            "geochart": "Kuwait"
+          },
+          {
+            "country": "Kyrgyzstan",
+            "cases": "144",
+            "todayCases": "14",
+            "deaths": "1",
+            "recovered": "9",
+            "totalTests": "9618",
+            "image": "Kyrgyzstan",
+            "geochart": "Kyrgyzstan"
+          },
+          {
+            "country": "Laos",
+            "cases": "10",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "437",
+            "image": "Laos",
+            "geochart": "Laos"
+          },
+          {
+            "country": "Latvia",
+            "cases": "509",
+            "todayCases": "16",
+            "deaths": "1",
+            "recovered": "1",
+            "totalTests": "19380",
+            "image": "Latvia",
+            "geochart": "Latvia"
+          },
+          {
+            "country": "Lebanon",
+            "cases": "520",
+            "todayCases": "12",
+            "deaths": "17",
+            "recovered": "54",
+            "totalTests": "9022",
+            "image": "Lebanon",
+            "geochart": "Lebanon"
+          },
+          {
+            "country": "Liberia",
+            "cases": "10",
+            "todayCases": "3",
+            "deaths": "1",
+            "recovered": "3",
+            "totalTests": "0",
+            "image": "Liberia",
+            "geochart": "Liberia"
+          },
+          {
+            "country": "Libya",
+            "cases": "17",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "131",
+            "image": "Libya",
+            "geochart": "Libya"
+          },
+          {
+            "country": "Liechtenstein",
+            "cases": "77",
+            "todayCases": "2",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "900",
+            "image": "Liechtenstein",
+            "geochart": "Liechtenstein"
+          },
+          {
+            "country": "Lithuania",
+            "cases": "771",
+            "todayCases": "75",
+            "deaths": "11",
+            "recovered": "7",
+            "totalTests": "21376",
+            "image": "Lithuania",
+            "geochart": "Lithuania"
+          },
+          {
+            "country": "Luxembourg",
+            "cases": "2729",
+            "todayCases": "117",
+            "deaths": "31",
+            "recovered": "500",
+            "totalTests": "22793",
+            "image": "Luxembourg",
+            "geochart": "Luxembourg"
+          },
+          {
+            "country": "Macao",
+            "cases": "43",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "10",
+            "totalTests": "0",
+            "image": "China",
+            "geochart": "Macao"
+          },
+          {
+            "country": "Madagascar",
+            "cases": "70",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Madagascar",
+            "geochart": "Madagascar"
+          },
+          {
+            "country": "Malawi",
+            "cases": "4",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Malawi",
+            "geochart": "Malawi"
+          },
+          {
+            "country": "Malaysia",
+            "cases": "3483",
+            "todayCases": "150",
+            "deaths": "57",
+            "recovered": "915",
+            "totalTests": "49570",
+            "image": "Malaysia",
+            "geochart": "Malaysia"
+          },
+          {
+            "country": "Maldives",
+            "cases": "19",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "13",
+            "totalTests": "0",
+            "image": "Maldives",
+            "geochart": "Maldives"
+          },
+          {
+            "country": "Mali",
+            "cases": "41",
+            "todayCases": "2",
+            "deaths": "3",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "Mali",
+            "geochart": "Mali"
+          },
+          {
+            "country": "Malta",
+            "cases": "213",
+            "todayCases": "11",
+            "deaths": "0",
+            "recovered": "2",
+            "totalTests": "9703",
+            "image": "Malta",
+            "geochart": "Malta"
+          },
+          {
+            "country": "Martinique",
+            "cases": "143",
+            "todayCases": "0",
+            "deaths": "3",
+            "recovered": "27",
+            "totalTests": "0",
+            "image": "Martinique",
+            "geochart": "Martinique"
+          },
+          {
+            "country": "Mauritania",
+            "cases": "6",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "2",
+            "totalTests": "67",
+            "image": "Mauritania",
+            "geochart": "Mauritania"
+          },
+          {
+            "country": "Mauritius",
+            "cases": "196",
+            "todayCases": "10",
+            "deaths": "7",
+            "recovered": "7",
+            "totalTests": "0",
+            "image": "Mauritius",
+            "geochart": "Mauritius"
+          },
+          {
+            "country": "Mayotte",
+            "cases": "134",
+            "todayCases": "6",
+            "deaths": "2",
+            "recovered": "14",
+            "totalTests": "479",
+            "image": "Mayotte",
+            "geochart": "Mayotte"
+          },
+          {
+            "country": "Mexico",
+            "cases": "1688",
+            "todayCases": "178",
+            "deaths": "60",
+            "recovered": "633",
+            "totalTests": "15668",
+            "image": "Mexico",
+            "geochart": "Mexico"
+          },
+          {
+            "country": "Moldova",
+            "cases": "752",
+            "todayCases": "161",
+            "deaths": "12",
+            "recovered": "29",
+            "totalTests": "681",
+            "image": "Moldova",
+            "geochart": "Moldova"
+          },
+          {
+            "country": "Monaco",
+            "cases": "66",
+            "todayCases": "2",
+            "deaths": "1",
+            "recovered": "3",
+            "totalTests": "0",
+            "image": "Monaco",
+            "geochart": "Monaco"
+          },
+          {
+            "country": "Mongolia",
+            "cases": "14",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Mongolia",
+            "geochart": "Mongolia"
+          },
+          {
+            "country": "Montenegro",
+            "cases": "201",
+            "todayCases": "27",
+            "deaths": "2",
+            "recovered": "1",
+            "totalTests": "1193",
+            "image": "Montenegro",
+            "geochart": "Montenegro"
+          },
+          {
+            "country": "Montserrat",
+            "cases": "6",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Montserrat",
+            "geochart": "Montserrat"
+          },
+          {
+            "country": "Morocco",
+            "cases": "919",
+            "todayCases": "128",
+            "deaths": "59",
+            "recovered": "66",
+            "totalTests": "4321",
+            "image": "Morocco",
+            "geochart": "Morocco"
+          },
+          {
+            "country": "Mozambique",
+            "cases": "10",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "338",
+            "image": "Mozambique",
+            "geochart": "Mozambique"
+          },
+          {
+            "country": "MS Zaandam",
+            "cases": "9",
+            "todayCases": "0",
+            "deaths": "2",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Netherlands",
+            "geochart": "MS Zaandam"
+          },
+          {
+            "country": "Myanmar",
+            "cases": "21",
+            "todayCases": "1",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Myanmar",
+            "geochart": "Myanmar"
+          },
+          {
+            "country": "Namibia",
+            "cases": "14",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "3",
+            "totalTests": "301",
+            "image": "Namibia",
+            "geochart": "Namibia"
+          },
+          {
+            "country": "Nepal",
+            "cases": "9",
+            "todayCases": "3",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "1521",
+            "image": "Nepal",
+            "geochart": "Nepal"
+          },
+          {
+            "country": "Netherlands",
+            "cases": "16627",
+            "todayCases": "904",
+            "deaths": "1651",
+            "recovered": "250",
+            "totalTests": "75415",
+            "image": "Netherlands",
+            "geochart": "Netherlands"
+          },
+          {
+            "country": "New Caledonia",
+            "cases": "17",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "1390",
+            "image": "New Caledonia",
+            "geochart": "New Caledonia"
+          },
+          {
+            "country": "New Zealand",
+            "cases": "950",
+            "todayCases": "82",
+            "deaths": "1",
+            "recovered": "127",
+            "totalTests": "33116",
+            "image": "New Zealand",
+            "geochart": "New Zealand"
+          },
+          {
+            "country": "Nicaragua",
+            "cases": "5",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Nicaragua",
+            "geochart": "Nicaragua"
+          },
+          {
+            "country": "Niger",
+            "cases": "144",
+            "todayCases": "24",
+            "deaths": "8",
+            "recovered": "0",
+            "totalTests": "4012",
+            "image": "Niger",
+            "geochart": "Niger"
+          },
+          {
+            "country": "Nigeria",
+            "cases": "214",
+            "todayCases": "4",
+            "deaths": "4",
+            "recovered": "25",
+            "totalTests": "4000",
+            "image": "Nigeria",
+            "geochart": "Nigeria"
+          },
+          {
+            "country": "North Macedonia",
+            "cases": "483",
+            "todayCases": "53",
+            "deaths": "17",
+            "recovered": "20",
+            "totalTests": "4920",
+            "image": "Macedonia",
+            "geochart": "North Macedonia"
+          },
+          {
+            "country": "Norway",
+            "cases": "5550",
+            "todayCases": "180",
+            "deaths": "62",
+            "recovered": "32",
+            "totalTests": "105865",
+            "image": "Norway",
+            "geochart": "Norway"
+          },
+          {
+            "country": "Oman",
+            "cases": "277",
+            "todayCases": "25",
+            "deaths": "2",
+            "recovered": "61",
+            "totalTests": "0",
+            "image": "Oman",
+            "geochart": "Oman"
+          },
+          {
+            "country": "Pakistan",
+            "cases": "2818",
+            "todayCases": "132",
+            "deaths": "41",
+            "recovered": "131",
+            "totalTests": "30308",
+            "image": "Pakistan",
+            "geochart": "Pakistan"
+          },
+          {
+            "country": "Palestine",
+            "cases": "217",
+            "todayCases": "23",
+            "deaths": "1",
+            "recovered": "21",
+            "totalTests": "7553",
+            "image": "Palestine",
+            "geochart": "Palestine"
+          },
+          {
+            "country": "Panama",
+            "cases": "1673",
+            "todayCases": "0",
+            "deaths": "41",
+            "recovered": "13",
+            "totalTests": "7333",
+            "image": "Panama",
+            "geochart": "Panama"
+          },
+          {
+            "country": "Papua New Guinea",
+            "cases": "1",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "72",
+            "image": "Papua New Guinea",
+            "geochart": "Papua New Guinea"
+          },
+          {
+            "country": "Paraguay",
+            "cases": "96",
+            "todayCases": "4",
+            "deaths": "3",
+            "recovered": "12",
+            "totalTests": "1289",
+            "image": "Paraguay",
+            "geochart": "Paraguay"
+          },
+          {
+            "country": "Peru",
+            "cases": "1746",
+            "todayCases": "151",
+            "deaths": "73",
+            "recovered": "914",
+            "totalTests": "17841",
+            "image": "Peru",
+            "geochart": "Peru"
+          },
+          {
+            "country": "Philippines",
+            "cases": "3094",
+            "todayCases": "76",
+            "deaths": "144",
+            "recovered": "57",
+            "totalTests": "5530",
+            "image": "Philippines",
+            "geochart": "Philippines"
+          },
+          {
+            "country": "Poland",
+            "cases": "3627",
+            "todayCases": "244",
+            "deaths": "79",
+            "recovered": "116",
+            "totalTests": "72901",
+            "image": "Poland",
+            "geochart": "Poland"
+          },
+          {
+            "country": "Portugal",
+            "cases": "10524",
+            "todayCases": "638",
+            "deaths": "266",
+            "recovered": "75",
+            "totalTests": "81087",
+            "image": "Portugal",
+            "geochart": "Portugal"
+          },
+          {
+            "country": "Qatar",
+            "cases": "1325",
+            "todayCases": "250",
+            "deaths": "3",
+            "recovered": "109",
+            "totalTests": "31951",
+            "image": "Qatar",
+            "geochart": "Qatar"
+          },
+          {
+            "country": "Réunion",
+            "cases": "334",
+            "todayCases": "13",
+            "deaths": "0",
+            "recovered": "40",
+            "totalTests": "0",
+            "image": "France",
+            "geochart": "Réunion"
+          },
+          {
+            "country": "Romania",
+            "cases": "3613",
+            "todayCases": "430",
+            "deaths": "146",
+            "recovered": "329",
+            "totalTests": "36092",
+            "image": "Romania",
+            "geochart": "Romania"
+          },
+          {
+            "country": "Russia",
+            "cases": "4731",
+            "todayCases": "582",
+            "deaths": "43",
+            "recovered": "333",
+            "totalTests": "639000",
+            "image": "Russia",
+            "geochart": "Russia"
+          },
+          {
+            "country": "Rwanda",
+            "cases": "102",
+            "todayCases": "13",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Rwanda",
+            "geochart": "Rwanda"
+          },
+          {
+            "country": "Saint Kitts and Nevis",
+            "cases": "9",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "113",
+            "image": "St Kitts and Nevis",
+            "geochart": "Saint Kitts and Nevis"
+          },
+          {
+            "country": "Saint Lucia",
+            "cases": "14",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "St Lucia",
+            "geochart": "Saint Lucia"
+          },
+          {
+            "country": "Saint Martin",
+            "cases": "24",
+            "todayCases": "2",
+            "deaths": "2",
+            "recovered": "5",
+            "totalTests": "18",
+            "image": "France",
+            "geochart": "Saint Martin"
+          },
+          {
+            "country": "San Marino",
+            "cases": "251",
+            "todayCases": "0",
+            "deaths": "32",
+            "recovered": "26",
+            "totalTests": "586",
+            "image": "San Marino",
+            "geochart": "San Marino"
+          },
+          {
+            "country": "Saudi Arabia",
+            "cases": "2179",
+            "todayCases": "140",
+            "deaths": "29",
+            "recovered": "420",
+            "totalTests": "0",
+            "image": "Saudi Arabia",
+            "geochart": "Saudi Arabia"
+          },
+          {
+            "country": "Senegal",
+            "cases": "219",
+            "todayCases": "12",
+            "deaths": "2",
+            "recovered": "72",
+            "totalTests": "195",
+            "image": "Senegal",
+            "geochart": "Senegal"
+          },
+          {
+            "country": "Serbia",
+            "cases": "1624",
+            "todayCases": "148",
+            "deaths": "44",
+            "recovered": "54",
+            "totalTests": "6401",
+            "image": "Serbia",
+            "geochart": "Serbia"
+          },
+          {
+            "country": "Seychelles",
+            "cases": "10",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Seychelles",
+            "geochart": "Seychelles"
+          },
+          {
+            "country": "Sierra Leone",
+            "cases": "4",
+            "todayCases": "2",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "2",
+            "image": "Sierra Leone",
+            "geochart": "Sierra Leone"
+          },
+          {
+            "country": "Singapore",
+            "cases": "1189",
+            "todayCases": "75",
+            "deaths": "6",
+            "recovered": "297",
+            "totalTests": "39000",
+            "image": "Singapore",
+            "geochart": "Singapore"
+          },
+          {
+            "country": "Sint Maarten",
+            "cases": "23",
+            "todayCases": "0",
+            "deaths": "4",
+            "recovered": "6",
+            "totalTests": "82",
+            "image": "Netherlands",
+            "geochart": "Sint Maarten"
+          },
+          {
+            "country": "Slovakia",
+            "cases": "471",
+            "todayCases": "21",
+            "deaths": "1",
+            "recovered": "10",
+            "totalTests": "13631",
+            "image": "Slovakia",
+            "geochart": "Slovakia"
+          },
+          {
+            "country": "Slovenia",
+            "cases": "977",
+            "todayCases": "43",
+            "deaths": "22",
+            "recovered": "79",
+            "totalTests": "27109",
+            "image": "Slovenia",
+            "geochart": "Slovenia"
+          },
+          {
+            "country": "Somalia",
+            "cases": "7",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "Somalia",
+            "geochart": "Somalia"
+          },
+          {
+            "country": "South Africa",
+            "cases": "1585",
+            "todayCases": "80",
+            "deaths": "9",
+            "recovered": "95",
+            "totalTests": "53937",
+            "image": "South Africa",
+            "geochart": "South Africa"
+          },
+          {
+            "country": "South Korea",
+            "cases": "10156",
+            "todayCases": "94",
+            "deaths": "177",
+            "recovered": "6325",
+            "totalTests": "455032",
+            "image": "South Korea",
+            "geochart": "South Korea"
+          },
+          {
+            "country": "Spain",
+            "cases": "126168",
+            "todayCases": "6969",
+            "deaths": "11947",
+            "recovered": "34219",
+            "totalTests": "355000",
+            "image": "Spain",
+            "geochart": "Spain"
+          },
+          {
+            "country": "Sri Lanka",
+            "cases": "166",
+            "todayCases": "7",
+            "deaths": "5",
+            "recovered": "27",
+            "totalTests": "0",
+            "image": "Sri Lanka",
+            "geochart": "Sri Lanka"
+          },
+          {
+            "country": "St. Barth",
+            "cases": "6",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "France",
+            "geochart": "St. Barth"
+          },
+          {
+            "country": "St. Vincent Grenadines",
+            "cases": "7",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "1",
+            "totalTests": "0",
+            "image": "St Vincent and Grenadines",
+            "geochart": "St. Vincent Grenadines"
+          },
+          {
+            "country": "Sudan",
+            "cases": "10",
+            "todayCases": "0",
+            "deaths": "2",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Sudan",
+            "geochart": "Sudan"
+          },
+          {
+            "country": "Suriname",
+            "cases": "10",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Suriname",
+            "geochart": "Suriname"
+          },
+          {
+            "country": "Sweden",
+            "cases": "6443",
+            "todayCases": "312",
+            "deaths": "373",
+            "recovered": "205",
+            "totalTests": "36900",
+            "image": "Sweden",
+            "geochart": "Sweden"
+          },
+          {
+            "country": "Switzerland",
+            "cases": "20505",
+            "todayCases": "899",
+            "deaths": "666",
+            "recovered": "6415",
+            "totalTests": "153440",
+            "image": "Switzerland",
+            "geochart": "Switzerland"
+          },
+          {
+            "country": "Syria",
+            "cases": "16",
+            "todayCases": "0",
+            "deaths": "2",
+            "recovered": "2",
+            "totalTests": "0",
+            "image": "Syria",
+            "geochart": "Syria"
+          },
+          {
+            "country": "Taiwan",
+            "cases": "355",
+            "todayCases": "7",
+            "deaths": "5",
+            "recovered": "50",
+            "totalTests": "35442",
+            "image": "Taiwan",
+            "geochart": "Taiwan"
+          },
+          {
+            "country": "Tanzania",
+            "cases": "20",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "3",
+            "totalTests": "0",
+            "image": "Tanzania",
+            "geochart": "Tanzania"
+          },
+          {
+            "country": "Thailand",
+            "cases": "2067",
+            "todayCases": "89",
+            "deaths": "20",
+            "recovered": "674",
+            "totalTests": "23669",
+            "image": "Thailand",
+            "geochart": "Thailand"
+          },
+          {
+            "country": "Timor-Leste",
+            "cases": "1",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "East Timor",
+            "geochart": "Timor-Leste"
+          },
+          {
+            "country": "Togo",
+            "cases": "41",
+            "todayCases": "1",
+            "deaths": "3",
+            "recovered": "17",
+            "totalTests": "0",
+            "image": "Togo",
+            "geochart": "Togo"
+          },
+          {
+            "country": "Trinidad and Tobago",
+            "cases": "103",
+            "todayCases": "5",
+            "deaths": "6",
+            "recovered": "1",
+            "totalTests": "736",
+            "image": "Trinidad and Tobago",
+            "geochart": "Trinidad and Tobago"
+          },
+          {
+            "country": "Tunisia",
+            "cases": "553",
+            "todayCases": "58",
+            "deaths": "18",
+            "recovered": "5",
+            "totalTests": "6485",
+            "image": "Tunisia",
+            "geochart": "Tunisia"
+          },
+          {
+            "country": "Turkey",
+            "cases": "23934",
+            "todayCases": "3013",
+            "deaths": "501",
+            "recovered": "786",
+            "totalTests": "161380",
+            "image": "Turkey",
+            "geochart": "Turkey"
+          },
+          {
+            "country": "Turks and Caicos",
+            "cases": "5",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Turks and Caicos",
+            "geochart": "Turks and Caicos"
+          },
+          {
+            "country": "UAE",
+            "cases": "1505",
+            "todayCases": "241",
+            "deaths": "10",
+            "recovered": "125",
+            "totalTests": "220000",
+            "image": "United Arab Emirates",
+            "geochart": "UAE"
+          },
+          {
+            "country": "Uganda",
+            "cases": "48",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "2629",
+            "image": "Uganda",
+            "geochart": "Uganda"
+          },
+          {
+            "country": "Ukraine",
+            "cases": "1225",
+            "todayCases": "153",
+            "deaths": "32",
+            "recovered": "25",
+            "totalTests": "5040",
+            "image": "Ukraine",
+            "geochart": "Ukraine"
+          },
+          {
+            "country": "United Kingdom",
+            "cases": "41903",
+            "todayCases": "3735",
+            "deaths": "4313",
+            "recovered": "135",
+            "totalTests": "183190",
+            "image": "United Kingdom",
+            "geochart": "United Kingdom"
+          },
+          {
+            "country": "Uruguay",
+            "cases": "386",
+            "todayCases": "0",
+            "deaths": "5",
+            "recovered": "86",
+            "totalTests": "4786",
+            "image": "Uruguay",
+            "geochart": "Uruguay"
+          },
+          {
+            "country": "US",
+            "cases": "307721",
+            "todayCases": "30560",
+            "deaths": "8377",
+            "recovered": "14686",
+            "totalTests": "1598087",
+            "image": "United States",
+            "geochart": "US"
+          },
+          {
+            "country": "Uzbekistan",
+            "cases": "266",
+            "todayCases": "39",
+            "deaths": "2",
+            "recovered": "25",
+            "totalTests": "0",
+            "image": "Uzbekistan",
+            "geochart": "Uzbekistan"
+          },
+          {
+            "country": "Vatican City",
+            "cases": "7",
+            "todayCases": "0",
+            "deaths": "0",
+            "recovered": "0",
+            "totalTests": "0",
+            "image": "Vatican City",
+            "geochart": "Vatican City"
+          },
+          {
+            "country": "Venezuela",
+            "cases": "155",
+            "todayCases": "2",
+            "deaths": "7",
+            "recovered": "52",
+            "totalTests": "1779",
+            "image": "Venezuela",
+            "geochart": "Venezuela"
+          },
+          {
+            "country": "Vietnam",
+            "cases": "240",
+            "todayCases": "1",
+            "deaths": "0",
+            "recovered": "90",
+            "totalTests": "75458",
+            "image": "Vietnam",
+            "geochart": "Vietnam"
+          },
+          {
+            "country": "World",
+            "cases": "1196095",
+            "todayCases": "79452",
+            "deaths": "64546",
+            "recovered": "246110",
+            "totalTests": "0",
+            "image": "https://www.gstatic.com/images/icons/material/syst",
+            "geochart": "World"
+          },
+          {
+            "country": "Zambia",
+            "cases": "39",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "2",
+            "totalTests": "619",
+            "image": "Zambia",
+            "geochart": "Zambia"
+          },
+          {
+            "country": "Zimbabwe",
+            "cases": "9",
+            "todayCases": "0",
+            "deaths": "1",
+            "recovered": "0",
+            "totalTests": "316",
+            "image": "Zimbabwe",
+            "geochart": "Zimbabwe"
+          }
+    ]
