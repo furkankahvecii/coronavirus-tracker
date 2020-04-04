@@ -34,7 +34,8 @@ class CoronaVirus extends CI_Controller
         "Guinea-Bissau" => "Guinea Bissau",
         "St. Barth" => "France",
         "CAR" => "Central African Republic",
-        "Caribbean Netherlands" => "Netherlands");
+        "Caribbean Netherlands" => "Netherlands",
+        "World" => "https://www.gstatic.com/images/icons/material/system_gm/1x/language_grey600_24dp.png");
     
     private $geochart_country= array( "USA"=>"US", "UK"=>"United Kingdom", "S. Korea"=>"South Korea");
 
@@ -48,12 +49,13 @@ class CoronaVirus extends CI_Controller
     {
         $data['RESULT_DATA'] = $this->fetch_data();
         
-        $data['TOTAL_CASE_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'cases'));
-        $data['TOTAL_DEATHS_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'deaths'));          
-        $data['TOTAL_RECOVERED_REPORTED'] = array_sum(array_column($data['RESULT_DATA'],'recovered'));
-        $data['TOTAL_CASE_REPORTED_LASTDAY'] = $data['TOTAL_CASE_REPORTED'] - array_sum(array_column($data['RESULT_DATA'],'todayCases'));
+        $data['TOTAL_CASE_REPORTED'] = $data['RESULT_DATA'][0]['cases'];//array_sum(array_column($data['RESULT_DATA'],'cases'));
+        $data['TOTAL_DEATHS_REPORTED'] = $data['RESULT_DATA'][0]['deaths'];//array_sum(array_column($data['RESULT_DATA'],'deaths'));          
+        $data['TOTAL_RECOVERED_REPORTED'] = $data['RESULT_DATA'][0]['recovered'];//array_sum(array_column($data['RESULT_DATA'],'recovered'));
+        $data['TOTAL_CASE_REPORTED_LASTDAY'] = $data['RESULT_DATA'][0]['todayCases'];//$data['TOTAL_CASE_REPORTED'] - array_sum(array_column($data['RESULT_DATA'],'todayCases'));
 
         usort($data['RESULT_DATA'], array($this,'cmp'));     
+     
         $this->load->view('coronavirus_vw',$data);
     }
 
