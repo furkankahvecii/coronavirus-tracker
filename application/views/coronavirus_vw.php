@@ -155,20 +155,26 @@
                                                         <tr>
                                                             <th>Location</th>
                                                             <th>Confirmed cases</th>
-                                                            <th>Cases per 1M people</th>
+                                                        <!--<th>Cases per 1M people</th>-->
                                                             <th>Deaths</th>
                                                             <th>Recovered</th>
+                                                            <th>Total Tests</th>
                                                             <th>Changes since last day</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                         <?php foreach($RESULT_DATA as $result){ ?>
                                                         <tr>
-                                                            <td><img src="https://www.gstatic.com/onebox/sports/logos/flags/<?php echo strtolower(str_replace(" ","_",$result['image'])); ?>_icon_square.svg" height="20" width="20"> <?php echo $result['country'];?></td>
+                                                            
+                                                            <td><img src="<?php if($result['country'] == "World") 
+                                                            {echo $result['image'];}
+                                                            else{ echo "https://www.gstatic.com/onebox/sports/logos/flags/".strtolower(str_replace(" ","_",$result['image']))."_icon_square.svg" ;}?>
+                                                            " height="20" width="20"> <?php echo $result['country'];?></td>
                                                             <td><?php echo number_format($result['cases']);?></td>
-                                                            <td><?php echo number_format($result['casesPerOneMillion']);?></td>
+                                                        <!--<td><?php echo number_format($result['casesPerOneMillion']);?></td>-->
                                                             <td><?php echo number_format($result['deaths']);?></td>
                                                             <td><?php echo number_format($result['recovered']);?></td>
+                                                            <td><?php echo number_format($result['totalTests']);?></td>
                                                             <td><?php echo number_format($result['todayCases']);?></td>
                                                         </tr>
                                                         <?php } ?>
