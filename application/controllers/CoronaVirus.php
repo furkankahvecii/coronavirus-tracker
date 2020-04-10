@@ -3,10 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class CoronaVirus extends CI_Controller 
 {
+    private $data;
     private $url = "https://coronavirus-19-api.herokuapp.com/countries";
     private $covidjson = "covidinfo.json";
     private $geochart_country= array( "USA"=>"US", "UK"=>"United Kingdom", "S. Korea"=>"South Korea");
-    private $data;
+    private $continent = array("Europe","North America","Asia","South America","Africa","Oceania","","World");
     private $img_url = array( 
         "US"=>"United States",
         "UK"=>"United Kingdom", 
@@ -47,23 +48,13 @@ class CoronaVirus extends CI_Controller
     }
     public function index()
     {     
-        $this->data['RESULT_DATA'] = $this->fetch_data();
-        usort($this->data['RESULT_DATA'], array($this,'cmp'));
-        $this->data['TOTAL_CASE_REPORTED'] = $this->data['RESULT_DATA'][0]['cases'];
-        $this->data['TOTAL_DEATHS_REPORTED'] = $this->data['RESULT_DATA'][0]['deaths'];         
-        $this->data['TOTAL_RECOVERED_REPORTED'] = $this->data['RESULT_DATA'][0]['recovered'];
-        $this->data['TOTAL_CASE_REPORTED_LASTDAY'] = $this->data['RESULT_DATA'][0]['todayCases'];
+        $this->data['RESULT_DATA_COUNTRY'] = $this->fetch_data();
+        $continentdata =  $this->continent($this->data['RESULT_DATA_COUNTRY'],$this->continent);
+        usort($this->data['RESULT_DATA_COUNTRY'], array($this,'cmp'));
+        $this->data['RESULT_DATA_CONTİNENT'] = $continentdata['continent'];
+        $this->data['RESULT_DATA_COUNTRY'] = $continentdata['data'];
+        usort($this->data['RESULT_DATA_CONTİNENT'], array($this,'cmp'));
         $this->load->view('coronavirus_vw',$this->data);
-    }
-    private function change_country($data,$geochart_country)
-    {
-        $i = 0;
-        foreach($data as $each){
-           if(array_key_exists($each['country'], $geochart_country))
-                $data[$i]['country'] = $geochart_country[$each['country']];
-            $i++;  
-       }
-       return $data;
     }
     private function fetch_data()
     {
@@ -78,16 +69,17 @@ class CoronaVirus extends CI_Controller
         $data = $this->change_image_url($data,$this->img_url);
         return $data;
     }
-    private function number_format_array($data)
+    private function change_country($data,$geochart_country)
     {
-        $keys = array_keys($data[0]);
-        for($i=0;$i<count($data);$i++){
-            foreach($keys as $key){
-                $data[$i][$key] = is_numeric($data[$i][$key]) ? number_format($data[$i][$key]) : $data[$i][$key];
-            }
-        }
-        return $data;
+        $i = 0;
+        foreach($data as $each){
+           if(array_key_exists($each['country'], $geochart_country))
+                $data[$i]['country'] = $geochart_country[$each['country']];
+            $i++;  
+       }
+       return $data;
     }
+   
     private function cmp($a, $b)
     {
         if ($a['cases'] == $b['cases']) return 0;
@@ -104,5 +96,19 @@ class CoronaVirus extends CI_Controller
             $i++;  
         }    
         return $data;
+    }
+    private function continent($data,$continent)
+    {
+        $index_array = array();
+        $i=0;
+        while(in_array($data[$i]['country'], $continent))
+        {
+            $result['continent'][] = $data[$i];
+            $result['continent'][$i]['image'] == "";
+            $i++;
+        }
+        array_splice($data,0,$i); 
+        $result['data'] = $data;
+        return $result;
     }
 }

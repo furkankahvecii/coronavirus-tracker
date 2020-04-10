@@ -8,7 +8,7 @@
 
         function drawRegionsMap() {
             var data = google.visualization.arrayToDataTable([
-                ['Country', 'Confirmed Cases', ], <?php foreach($RESULT_DATA as $map) {
+                ['Country', 'Confirmed Cases', ], <?php foreach($RESULT_DATA_COUNTRY as $map) {
                     echo '["'.$map['country'].'",'.$map['cases'].'],';
                 } ?>
             ]);

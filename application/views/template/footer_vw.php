@@ -1,6 +1,6 @@
                             <div class="row ">
                                 <div class=" col-lg-12">
-                                    <div class="page-title footerchange">© 2020 Coronavirus Tracker - Furkan KAHVECİ
+                                    <div class="page-title footerchange">© 2020 Coronavirus Tracker - <a href="https://github.com/furkankahvecii/" target="_blank" >Furkan KAHVECİ</a>
                                     </div>
                                 </div>
                             </div>
@@ -21,7 +21,7 @@
         $('table').DataTable({
             order: [],
             paging: true,
-            "pageLength": 25,
+            "pageLength": 10,
             "pagingType": "full_numbers",
             "dom": '<"top"flp>rt<"bottom"ip><"clear">',
         });
