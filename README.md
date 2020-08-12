@@ -1,7 +1,7 @@
 # Coronavirus Tracker
 Coronavirus tracker for web with chart.
 
-![image](corona_image.png)
+![image](assets/images/corona_image.png)
 
 ## Demo
 https://coronavirus-track.herokuapp.com/
