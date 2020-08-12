@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
-                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo number_format($RESULT_DATA_CONTİNENT[0]['cases']);?></b>
+                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_CASES;?></b>
                                     </h2>
                                     <p class="text-muted m-b-0 m-t-20"><b>Reported as of Today</b></p>
                                 </div>
@@ -34,7 +34,7 @@
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
-                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo number_format($RESULT_DATA_CONTİNENT[0]['deaths']);?></b>
+                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_DEATHS;?></b>
                                     </h2>
                                     <p class="text-muted m-b-0 m-t-20"><b>Reported as of Today</b></p>
                                 </div>
@@ -48,7 +48,7 @@
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
-                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo number_format($RESULT_DATA_CONTİNENT[0]['recovered']);?></b>
+                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $TOTAL_RECOVERED;?></b>
                                     </h2>
                                     <p class="text-muted m-b-0 m-t-20"><b>Reported as of Today</b></p>
                                 </div>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="card-body p-t-10">
                                     <h2 class="m-t-0 m-b-15"><i
-                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo number_format($RESULT_DATA_CONTİNENT[0]['todayCases']);?></b>
+                                            class="mdi mdi-arrow-up text-success m-r-10"></i><b><?php echo $NEW_CASES; ?></b>
                                     </h2>
                                     <p class="text-muted m-b-0 m-t-20"><b>Since Previous Day</b></p>
                                 </div>
