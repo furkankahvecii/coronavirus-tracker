@@ -49,11 +49,14 @@ class CoronaVirus extends CI_Controller
     public function index()
     {     
         $this->data['RESULT_DATA_COUNTRY'] = $this->fetch_data();
-        $continentdata =  $this->continent($this->data['RESULT_DATA_COUNTRY'],$this->continent);
         usort($this->data['RESULT_DATA_COUNTRY'], array($this,'cmp'));
-        $this->data['RESULT_DATA_CONTİNENT'] = $continentdata['continent'];
-        $this->data['RESULT_DATA_COUNTRY'] = $continentdata['data'];
-        usort($this->data['RESULT_DATA_CONTİNENT'], array($this,'cmp'));
+        
+        $this->data['TOTAL_CASES'] = number_format($this->data['RESULT_DATA_COUNTRY'][0]['cases']);
+        $this->data['TOTAL_DEATHS'] = number_format($this->data['RESULT_DATA_COUNTRY'][0]['deaths']);
+        $this->data['TOTAL_RECOVERED'] = number_format($this->data['RESULT_DATA_COUNTRY'][0]['recovered']);
+        $this->data['NEW_CASES'] = number_format($this->data['RESULT_DATA_COUNTRY'][0]['todayCases']);
+
+        $this->data['RESULT_DATA_COUNTRY'] = array_splice($this->data['RESULT_DATA_COUNTRY'],1);
         $this->load->view('coronavirus_vw',$this->data);
     }
     private function fetch_data()
@@ -96,19 +99,5 @@ class CoronaVirus extends CI_Controller
             $i++;  
         }    
         return $data;
-    }
-    private function continent($data,$continent)
-    {
-        $index_array = array();
-        $i=0;
-        while(in_array($data[$i]['country'], $continent))
-        {
-            $result['continent'][] = $data[$i];
-            $result['continent'][$i]['image'] == "";
-            $i++;
-        }
-        array_splice($data,0,$i); 
-        $result['data'] = $data;
-        return $result;
     }
 }
